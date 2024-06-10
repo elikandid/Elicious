@@ -1,0 +1,161 @@
+body {
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.courgette-regular {
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  #logo {
+    width: 80px;
+    height: 40px;
+  }
+
+  nav {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #nav-links {
+    display: flex;
+    column-gap: 20px;
+  }
+
+  #hero-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+  }
+
+  #hero-overlay button {
+    border: none;
+    width: 135px;
+    height: 40px;
+    border-radius: 10px;
+    color: red;
+
+  }
+
+  #subtext-one { 
+    font-size: 60px;
+    
+  }
+
+  #subtext-two { 
+    font-size: 90px;
+  }
+
+
+
+  #video-sec {
+    width: 100vw;
+    height: 60vh;
+    position: relative;
+    margin-top: 100px;
+    
+  }
+
+  #video{
+    width: inherit;
+    height: inherit;
+    object-fit:cover;
+
+  }
+
+  #video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: inherit;
+    height: inherit;
+  }
+
+
+
+  #video-overlay .sub-header
+
+  #reservation {
+    background-color:#EFEFEF;
+    padding: 120px ;
+    display: flex ;
+  }
+
+  #hero {
+    background-image: url('../assets/images/heroimg.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: 100%;
+    background-repeat:no-repeat ;
+    display: flex;
+
+  }
+
+  .hero-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about {
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    align-items: center;
+  }
+
+  #about-text {
+    padding: 0 100px;
+  }
+
+  #about-text p {
+    color: gray;
+  }
+
+  #about-image {
+    width: 40%;
+    height: 350px;
+    border-radius: 15px;
+  }
+
+ 
+
+  .sub-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sub-header span:first-child {
+    color: red;
+    font-size: 30px;
+  }
+
+  .sub-header span:last-child {
+    font-size: 50px;
+  }
+
+  #discover {
+    background-image: url('../assets/images/pexels-geyonk-1132137.jpg');
+    width: 100vw;
+    height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+  }
