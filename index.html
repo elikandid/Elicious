@@ -1,106 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Elicious</title>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat&family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat&family=Poppins:wght@700&display=swap"
-        rel="stylesheet">
+    <!-- Link Fontawesome's CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link Swiper's CSS CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Link to Swiper's CSS External -->
+    <link rel="stylesheet" href="./css/swiper.css">
 </head>
-
 <body>
-    <nav>
-        <img id="logo" src="./assets/logos/logo.png" alt="">
-        <div id="nav-links">
-            <span><a href="">Home</a></span>
-            <span><a href="">Menu</a></span>
-            <Span><a href="">Reservation</a></Span>
-            <span><a href="">Gallery</a></Span>
-            <span><a href="">About</a></span>
-            <span><a href="">Blog</a></span>
-            <span><a href="">Contact</a></span>
-        </div>
-    </nav>
-
-    <section id="hero">
-        <div id="hero-overlay">
-            <header class="hero-header">
-                <span id="subtext-one" class="courgette-regular">Welcome to</span>
-                <span id="subtext-two" class="poppins-bold">Elicious</span>
-            </header>
-            <button>Look Menu</button>
-
-        </div>
-    </section>
-
-
-    <section id="about">
-        <div id="about-text">
-            <div class="sub-header">
-                <span class="courgette-regular">Italian Restaurant</span>
-                <span class="poppins-bold">Welcome</span>
-            </div>
-            <p>
-                Donec quis lorem nulla. Nunc eu odio mi.
-                Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia,
-                nisl ante egestas mi, ac facilisis ligula sem id neque.
-            </p>
-            <div id="about-link">
-                <span>Our Story</span>
-                <span>icon here</span>
-            </div>
-        </div>
-        <img id="about-image" src="./assets/images/about-image.jpg" alt="">
-    </section>
-
-    <Section id="discover">
-        <div class="sub-header">
-            <span class="courgette-regular">Discover</span>
-            <span class="poppins-bold">Elicious</span>
-        </div>
-    </Section>
-
-    <!-- <section>menu goes here</section> -->
-
-    <section id="video-sec">
-        <video id="video" autoplay muted loop src="./assets/videos/discvid.mp4">
-        </video>
-        <div id="video-overlay">
+    <section id="hero-section">
+        <div id="nav-bar">
             <div>
-                <span class="courgette-regular">Welcome to</span>
-                <span class="poppins-bold">Elicious</span>
+                <img id="logo" src="./assets/logos/logo-no-background.png" alt="Yummy Logo">
             </div>
-
-
-            <button>Look Menu</button>
-
-
+            <nav id="nav-links">
+                <a href="">HOME</a>
+                <a href="">MENU</a>
+                <a href="">RESERVATIONS</a>
+                <a href="">GALLERY</a>
+                <a href="">ABOUT</a>
+                <a href="">BLOGS</a>
+                <a href="">CONTACT</a>
+            </nav>
+            <div id="socials-menu-container">
+                <ul>
+                    <li><a href=""><img class="socials" src="./assets/logos/tripadvisor.png" alt="tripadvisor"></a></li>
+                    <li><a href=""><img class="socials" src="./assets/logos/facebook.png" alt="facebook"></a></li>
+                    <li><a href=""><img class="socials" src="./assets/logos/twitter.png" alt="tripadvisor"></a></li>
+                </ul>
+                <img id="hamburger-menu" src="./assets/logos/menu-veggie-burger.png" alt="hamburger-menu">
+            </div>
         </div>
-
-
-
+        <div id="hero-section-texts">
+            <p id="welcome-text" class="courgette-regular">Welcome to</p>
+            <p id="elicious-text" class="poppins-bold">ELicious</p>
+            <button id="menu-button">LOOK MENU</button>
+        </div>
     </section>
-
-    <section>
-        <div id="section1">
-            <div class="sub-header">
-                <span class="courgette-regular">Resevation</span>
-                <span class="poppins-bold">BOOK TABLE</span>
+    <section id="about-us-section">
+        <div id="about-us-section-text">
+            <div class="sub-heading">
+                <p class="courgette-regular">Italian Restaurant</p>
+                <p class="poppins-bold">WELCOME</p>
+            </div>
+            <p id="welcome-paragraph">Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.
+            </p>
+            <div id="our-story-and-arrow">
+                <p>OUR STORY</p>
+                <img src="./assets/logos/forward-arrow.png" alt="forward-arrow">
+            </div>
+        </div>
+        <div id="about-us-section-img">
+            <img id="about-us-section-food" src="./assets/images/welcomeimg.jpg" alt="">
+        </div>
+    </section>
+    <section id="discover" class="sub-heading">
+        <p class="courgette-regular">Discover</p>
+        <p class="poppins-bold">ELicious</p>
+    </section>
+    <section class="before-menu">
+        <div>
+            <img src="./assets/images/romantic.jpg" alt="">
+            <h1 class="poppins-bold">ROMANTIC RESTAURANT</h1>
+            <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+            <p><a href="">LEARN MORE <i class="fa-sharp fa-solid fa-right-long"></i></a></p>
+        </div>
+        <div>
+            <img src="./assets/images/goodfood.jpg" alt="">
+            <h1 class="poppins-bold">ROMANTIC RESTAURANT</h1>
+            <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+            <p><a href="">LEARN MORE <i class="fa-sharp fa-solid fa-right-long"></i></a></p>
+        </div>
+        <div>
+            <img src="./assets/images/wine-4644577_1280.jpg" alt="">
+            <h1 class="poppins-bold">ROMANTIC RESTAURANT</h1>
+            <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+            <p><a href="">LEARN MORE <i class="fa-sharp fa-solid fa-right-long"></i></a></p>
+        </div>
+    </section>
+    <section id="menu">
+        <div id="menu-heading" class="sub-heading">
+            <p class="courgette-regular">Discover</p>
+            <p class="poppins-bold">OUR MENU</p>
+        </div>
+        <div id="menu-row-1">
+            <div>
+                <img id="lunch-img" src="./assets/images/lunchrice.jpg" alt="">
+                <button >LUNCH</button>
+            </div>
+            <div id="dinner-img">
+                <img id="dinner-img" src="./assets/images/turkey-852045.jpg" alt="">
+                <button>DINNER</button>
+            </div>
+            <div id="menu-row-1-with-rows">
+                <div>
+                    <img id="drink" src="./assets/images/drinks-2578446.jpg" alt="">
+                    <button>DRINK</button>
+                </div>
+                <div id="starters">
+                    <img src="./assets/images/starter.png" alt="">
+                    <button>STARTERS</button>
+                </div>
+            </div>
+        </div>
+        <div id="menu-row-2">
+            <div>
+                <img id="happyour" src="./assets/images/happyhour.jpg" alt="">
+                <button>HAPPY HOUR</button>
+            </div>
+            <div>
+                <img id="dessert" src="./assets/images/dessert.jpg" alt="">
+                <button>DESSERT</button>
+            </div>
+        </div>
+    </section>
+    <section id="upcomming-events">
+        <div id="" class="sub-heading">
+            <p class="courgette-regular">Upcomming</p>
+            <p id="events-text" class="poppins-bold">EVENTS</p>
+        </div>
+        <div id="events-card">
+            <div id="events-card-left">
+                <div id="events-card-left-text-section">
+                    <p id="vertical-text">
+                        08:00 PM THURSDAY - 06 JUNE 2024
+                    </p>
+                </div>
+                <div id="events-card-left-image-section">
+                    <img id="events-card-left-image" src="./assets/images/glasses-5488381.jpg" alt="">
+                </div>
+            </div>
+            <div id="events-card-right">
+                <div id="events-card-right-container">
+                    <div id="events-card-right-text">
+                        <p >WINES DURING SPECIFIC NIGHTS</p>
+                        <P>
+                            Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est.
+                            Sed fringilla, nunc sed imperdiet lacinia
+                        </P>
+                    </div>
+                    <div id="events-card-right-time">
+                        <div>
+                            <p class="poppins-bold">24</p>
+                            <p class="poppins-bold">DAYS</p>
+                        </div>
+                        <div>
+                            <p class="poppins-bold">10</p>
+                            <p class="poppins-bold">HOURS</p>
+                        </div>
+                        <div>
+                            <p class="poppins-bold">12</p>
+                            <p class="poppins-bold">MINUTES</p>
+                        </div>
+                        <div>
+                            <p class="poppins-bold">18</p>
+                            <p class="poppins-bold">SECONDS</p>
+                        </div>
+                    </div>
+                    <p id="view-details">VIEW DETAILS <span><i class="fa-sharp fa-solid fa-right-long"></i></span></p>
+                </div>
+                </div>      
+        </div>
+    </section>
+    <section id="reservation">
+        <div id="reservation-section-left">
+            <div id="reservation-subheading" class="sub-heading">
+                <p class="courgette-regular">Reservation</p>
+                <p class="poppins-bold">BOOK TABLE</p>
             </div>
             <form action="">
-                <div id="input-grid">
-                    <label for="date">Date:</label>
-                    <input type="">
-
-                </div>
+                <div id="form-fields">
+                    <div id="date-div">
+                        <label for="date">Date</label><br>
+                        <input type="date" name="date" id="date"><br>
+                    </div>
+                    <div>
+                        <label for="name">Name</label><br>
+                        <input type="text" name="name" id="name"><br>
+                    </div>
+                    <div>
+                        <label for="Time">Time</label><br>
+                            <select class="time-people-container" name="time" id="time">
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                            </select>
+                    </div>
+                    <div>
+                        <label for="phone">Phone</label><br>
+                        <input type="tel" name="phone" id="phone"><br>
+                    </div> 
+                    <div>
+                        <label for="person">Person</label><br>                 
+                            <select class="time-people-container" name="people" id="people">
+                                <option value="1 person">1 person</option>
+                                <option value="2 person">2 person</option>
+                                <option value="3 person">3 person</option>
+                                <option value="4 person">4 person</option>
+                                <option value="5 person">5 person</option>
+                                <option value="6 person">6 person</option>
+                                <option value="7 person">7 person</option>
+                            </select>
+                    </div>
+                    
+                    <div>
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" id="email"><br>
+                    </div>
+                </div>  
             </form>
+            <button type="submit">BOOK TABLE</button>
         </div>
-
+        <div id="reservation-section-right">
+            <img src="./assets/images/table-625611_1280.jpg" alt="">
+        </div>
     </section>
+    <section class="swiper mySwiper">
+        <!-- <div id="swiper-heading" class="sub-heading">
+            <p class="courgette-regular">Customer say</p>
+            <p class="poppins-bold">REVIEW</p>
+        </div> -->
+        <div class="swiper-wrapper">
+            <!-- SLIDER 1 -->
+            <div id="review" class="swiper-slide">
+                 <div id="" class="sub-heading">
+                    <p class="courgette-regular">Customer say</p>
+                    <p class="poppins-bold">REVIEW</p>
+                </div>
+                <div ><img id="review-image" src="./assets/images/smile-5047506.jpg" alt=""></div>
+                <p id="customer-review-msg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, fugiat recusandae. Ipsam omnis deserunt ducimus minus aliquid eveniet ex impedit quis officia placeat!</p>
+                <div>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                </div>
+                <p id="reviewer-name">DENNIS APPAH - NEW YORK</p>
+            </div>
+            <!-- SLIDER 2 -->
+            <div id="review" class="swiper-slide">
+                <div id="" class="sub-heading">
+                    <p class="courgette-regular">Customer say</p>
+                    <p class="poppins-bold">REVIEW</p>
+                </div>
+                <div ><img id="review-image" src="./assets/images/man-5415572_1280.jpg" alt=""></div>
+                <p id="customer-review-msg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, fugiat recusandae. Ipsam omnis deserunt ducimus minus aliquid eveniet ex impedit quis officia placeat!</p>
+                <div>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                </div>
+                <p id="reviewer-name">CAROLINE - TORONTO</p>
+            </div>
+            <!-- SLIDER 3 -->
+            <div id="review" class="swiper-slide">
+                <div class="sub-heading">
+                    <p class="courgette-regular">Customer say</p>
+                    <p class="poppins-bold">REVIEW</p>
+                </div>
+                <div ><img id="review-image" src="./assets/images/chefs-3701719.jpg" alt=""></div>
+                <p id="customer-review-msg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, fugiat recusandae. Ipsam omnis deserunt ducimus minus aliquid eveniet ex impedit quis officia placeat!</p>
+                <div>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                </div>
+                <p id="reviewer-name">JAPHELET - MICHIGAN</p>
+            </div>
+            <!-- END OF SLIDER -->
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+    </section>
+    <section id="our-video">
+        <div id="" class="sub-heading">
+            <p class="courgette-regular">Discover</p>
+            <p id="events-text" class="poppins-bold">OUR VIDEO</p>
+        </div>
+        <i id="play-button" class="fa-solid fa-circle-play"></i>
+        <!-- <iframe src="./assets/video/cooking-video.mp4" frameborder="0"></iframe> // check the usage later-->
+        <video src="./assets/video/restaurantvid.mp4" autoplay controls></video>
+    </section>
+    <section class="before-menu">
+        <!-- <div id="" class="sub-heading">
+            <p class="courgette-regular">Latest News</p>
+            <p class="poppins-bold">THE BLOG</p>
+        </div> -->
+        <div>
+            <img src="./assets/images/buildings-1836478_1280.jpg" alt="">
+            <h1 class="poppins-bold">BEST PLACES FOR WINE</h1>
+            <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+            <p><a href="">CONTINUE READING <i class="fa-sharp fa-solid fa-right-long"></i></a></p>
+        </div>
+        <div>
+            <img src="./assets/images/kitchen-2165756.jpg" alt="">
+            <h1 class="poppins-bold">PRIVATE CHEF</h1>
+            <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+            <p><a href="">CONTINUE READING <i class="fa-sharp fa-solid fa-right-long"></i></a></p>
+        </div>
+        <div>
+            <img src="./assets/images/table-7248586.jpg" alt="">
+            <h1 class="poppins-bold">STYLE THE WEEDING PARTY</h1>
+            <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+            <p><a href="">CONTINUE READING <i class="fa-sharp fa-solid fa-right-long"></i></a></p>
+        </div>
+    </section>
+    <section id="signup-page">
+        <p class="poppins-bold">SPECIALS SIGN UP</p>
+        <input type="email" name="" id="enter-email-for-signup">
+        <button id="sign-up-btn">SIGN UP</button>
+    </section>
+    <footer>
+        <!-- TOP FOOTER -->
+        <div id="footer-top">
+            <div id="footer-top-left" class="top-footers">
+                <h2 class="poppins-bold">CONTACT US</h2>
+                <p><span><i class="fa-solid fa-location-dot"></i></span>8th floor, 379 Hudson St, New York, NY 10018</p>
+                <p><span><i class="fa-solid fa-phone"></i></span>(+1) 96 716 6879</p>
+                <p><span><i class="fa-solid fa-envelope"></i></span>contact@site.com</p>
+                <h2 id="opening-times-heading" class="poppins-bold">OPENING TIMES</h2>
+                <p>8th floor, 379 Hudson St, New York, NY 10018</p>
+                <p>(+1) 96 716 6879</p>
+            </div>
+            <div id="footer-top-middle" class="top-footers">
+                <h2 class="poppins-bold">LATEST TWITTER </h2>
+                <p><span><i class="fa-brands fa-twitter"></i></span>@colorlib</p>
+                <p>Activello is a good option. It has a slider built into that displays the featured image in the slider.</p>
+                <p><a href="">https://buff.ly/2zaSfAQ</a></p>
+                <p>21 Dec 2017</p>
+                <p><span><i class="fa-brands fa-twitter"></i></span>@colorlib</p>
+                <p>Activello is a good option. It has a slider built into that displays</p>
+                <p><a href="">https://buff.ly/2zaSfAQ</a></p>
+                
+            </div>
+            <div id="footer-top-right" class="top-footers">
+                <h2 class="poppins-bold">GALLERY</h2>
+                <div id="gallery-items">
+                    <img src="./assets/images/lunchrice.jpg" alt="">
+                    <img src="./assets/images/welcomeimg.jpg" alt="">
+                    <img src="./assets/images/wine-4644577_1280.jpg" alt="">
+                    <img src="./assets/images/discoverimg.jpg" alt="">
+                    <img src="./assets/images/glasses-5488381.jpg" alt="">
+                    <img src="./assets/images/dessert.jpg" alt="">
+                    <img src="./assets/images/drinks-2578446.jpg" alt="">
+                    <img src="./assets/images/eliheroimg.jpg" alt="">
+                    <img src="./assets/images/romantic.jpg" alt="">
+                    <img src="./assets/images/goodfood.jpg" alt="">
+                    <img src="./assets/images/chefs-3701719.jpg" alt="">
+                    <img src="./assets/images/wine-7046276_1280.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="footer-bottom">
+            <div id="socials-menu-container">
+                <ul>
+                    <li><a href=""><img class="socials" src="./assets/logos/tripadvisor.png" alt="tripadvisor"></a></li>
+                    <li><a href=""><img class="socials" src="./assets/logos/facebook.png" alt="facebook"></a></li>
+                    <li><a href=""><img class="socials" src="./assets/logos/twitter.png" alt="tripadvisor"></a></li>
+                </ul>
+            </div>           
+            <p>@ 2017 Colorlib. Get The Theme</p>
+        </div>
+    </footer>
 
+    <!-- Swiper JS cdn-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Swiper JS External -->
+    <script src="./js/index.js"></script>
 </body>
-
 </html>
